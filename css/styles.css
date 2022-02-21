@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: sans-serif, arial, helvetica;
+  color: #343a40;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header {
+  max-width: 1024px;
+  gap: 20px;
+  padding: 20px;
+}
+
+.result-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.result-container .input-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.result-container .input-container input[type="text"] {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+}
+
+.listado-pruebas {
+  gap: 10px;
+  padding: 20px;
+}
+
+.listado-pruebas .table-container {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.main {
+  max-width: 1024px;
+  justify-content: space-around;
+}
+
+.main table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 500px;
+}
+
+.main table th,
+.main table tr {
+  text-align: center;
+}
+
+.main table td,
+.main table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.main table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #212738;
+  color: white;
+}
+
+/* UTILS */
+.sub-title {
+  font-size: 24px;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  padding: 10px 10px;
+  color: #fff;
+  background: #00abe7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.test-success {
+  background: #52b788;
+  color: #fff;
+}
+
+.test-fail {
+  background: #b21e35;
+  color: #fff;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulacion de Sistemas</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="container header">
+            <h1>Problema del Ebrio</h1>
+            <h4>Iniciar Simulación</h4>
+            <button class="btn" onclick="simulation()">Iniciar Simulacion</button>
+        </header>
+        <main class="container main hidden" id="main">
+
+            <div class="result-container">
+                <div class="input-container">
+                    <label for="tries">Intentos:</label>
+                    <input type="text" value="0" id="tries" disabled>
+                </div>
+                <div class="input-container">
+                    <label for="result">Probabilidad</label>
+                    <input type="text" value="0" class="text-right" id="result" disabled>
+                </div>
+            </div>
+
+            <div class="container listado-pruebas" id="listado-pruebas">
+                <h4 class="sub-title">Resultados de cada Prueba</h4>
+                <div class="table-container" id="table-container">
+                    <table id="table-results">
+                        <thead>
+                            <tr>
+                                <th>Intento</th>
+                                <th>Dos Cuadras del Origen</th>
+                            </tr>
+                        </thead>
+                        <tbody id="test-results"></tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <script src="./js/index.js"></script>
+</body>
+
+</html>
