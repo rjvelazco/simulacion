@@ -104,7 +104,7 @@ const scrollIsEnding = (overflow, limit) => {
 
 const cleanLastSimulation = () => {
   // Vaciamos la Tabla de resultados
-  document.getElementById("test-results").innerHTML.innerHTML = "";
+  document.getElementById("test-results").innerHTML = "";
   // Limpiamos los datos que no fueron agregados
   datosNoAgregados = [];
   // Limpiamos el ultimo index
